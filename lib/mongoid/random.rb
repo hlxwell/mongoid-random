@@ -30,12 +30,11 @@ module Mongoid
         self.save
       end
 
-    end
+      protected
 
-  protected
-
-    def generate_mongoid_random_key
-      self._randomization_key = rand
+      def generate_mongoid_random_key
+        self._randomization_key = rand
+      end
     end
 
   end
