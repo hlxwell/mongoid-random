@@ -5,6 +5,7 @@ module Mongoid
 
     included do
       field :_randomization_key, type: Float
+      index _randomization_key: 1
       before_create :generate_mongoid_random_key
     end
 
